@@ -36,13 +36,16 @@ to spare. The checks below enforce the gate in code so a bad
 text can never be written silently.
 """
 
+# Champion haiku, 5-7-5 — one line per entry.
+HAIKU_LINES = [
+    "I pushed straight to main",
+    "One missing semicolon",
+    "Rollback failed as well",
+]
+
 import os
 
-HAIKU = (
-    "I pushed straight to main\n"
-    "One missing semicolon\n"
-    "Rollback failed as well"
-)
+HAIKU = "\n".join(HAIKU_LINES)
 
 MIN_CHARS = 1
 MAX_CHARS = 200
